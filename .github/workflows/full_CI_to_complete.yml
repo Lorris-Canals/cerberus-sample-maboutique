@@ -48,7 +48,7 @@ jobs:
         environment: UAT
         tag: ${TAG}
   run_Tests_Prod:
-    needs: sonarcloud
+    needs: Run_Tests_UAT
     name: Run_Tests_Prod
     runs-on: ubuntu-latest
     steps:
